@@ -1,14 +1,18 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Provides inverse matrix data by either computation of new matrix data or  
+## by pulling a previously established unchanged inverse matrix from cache. 
+## The process also checks for and allows for argument values assigned outside
+## the calling environment
 
-## Write a short comment describing this function
+## Create special "matrix" object that can cache it's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
 }
 
 
-## Write a short comment describing this function
+## Compute the inverse "special" returned by makeCacheMatrix. If matrix inverse 
+## has already been computed and matrix has not changed, then retrieve the 
+## inverse from  cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
